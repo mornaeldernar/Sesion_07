@@ -25,8 +25,6 @@ class(country.spanish)
 class(country.spanish$CountryCode)
 class(country.spanish$Percentage)
 head(country.spanish$Percentage)
-country.spanish<-list(country.spanish)
-class(country.spanish)
 
 graph <- ggplot(country.spanish, 
                  aes( Percentage, CountryCode)) + geom_bar(stat="identity", colour="gray") 
